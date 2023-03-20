@@ -25,7 +25,12 @@ app.MapControllerRoute(
     pattern: "{controller=Table}/{action=Index}");
 
 app.MapControllerRoute(
-    name: "table",
+    name: "card",
     pattern: "{controller=Card}/{action=Index}");
+
+app.MapControllerRoute(
+    name: "login",
+    pattern: "{controller=Login}/{action=Index}");
+
 
 app.Run();
