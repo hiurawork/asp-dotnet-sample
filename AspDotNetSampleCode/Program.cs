@@ -24,4 +24,8 @@ app.MapControllerRoute(
     name: "table",
     pattern: "{controller=Table}/{action=Index}");
 
+app.MapControllerRoute(
+    name: "table",
+    pattern: "{controller=Card}/{action=Index}");
+
 app.Run();

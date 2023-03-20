@@ -1,0 +1,22 @@
+﻿@{
+}
+
+<div class="text-center">
+    <div class="container">
+        <div class="row">
+            @foreach (CardDataModel data in ViewBag.Datas)
+            {
+                <div class="col" style="margin-bottom: 20px">
+                    <div class="card" style="width: 18rem;">
+                        <img src=@(data.Image) class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">@(data.Name)</h5>
+                            <p class="card-text">@(data.Price)円</p>
+                            <p class="card-text">@(data.Note)</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

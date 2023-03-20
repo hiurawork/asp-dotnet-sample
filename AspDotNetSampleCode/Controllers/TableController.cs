@@ -17,12 +17,13 @@ namespace AspDotNetSampleCode.Controllers
             List<TableDataModel> datas = GetTableDatas();
             ViewBag.Datas = datas;
 
-            string yourName = "bbbbb";
-            ViewData["mame"] = yourName;
-
-            return View(datas);
+            return View();
         }
 
+        /// <summary>
+        /// テーブルに表示するデータの一覧を取得します。
+        /// </summary>
+        /// <returns>取得されたデータを返します。</returns>
         private List<TableDataModel> GetTableDatas()
         {
             List<TableDataModel> datas = new List<TableDataModel>();
