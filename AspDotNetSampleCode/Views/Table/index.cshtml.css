@@ -1,0 +1,17 @@
+﻿/* テーブルスクロールのCSS 開始 */
+.table-sticky {
+    display: block;
+    overflow-y: scroll;
+    height: calc(100vh/2);
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.table-sticky thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+    width: 500px;
+}
+/* テーブル用の 終了 */
