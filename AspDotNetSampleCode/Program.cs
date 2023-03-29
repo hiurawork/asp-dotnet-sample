@@ -32,5 +32,8 @@ app.MapControllerRoute(
     name: "login",
     pattern: "{controller=Login}/{action=Index}");
 
+app.MapControllerRoute(
+    name: "create",
+    pattern: "{controller=Create}/{action=Create}");
 
 app.Run();
